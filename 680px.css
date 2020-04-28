@@ -1,0 +1,53 @@
+@media screen and (max-width:680px){
+   
+    #top {
+        
+        display: flex;
+        border:10px solid green ;
+        
+        justify-content: center !important;
+    }
+    #top h1{
+        
+        border:1px solid red;
+        
+    }
+#top >div {
+    display:none;
+}
+/* 顶部悬浮的几个按钮图标隐藏 */
+header{
+    display: none;
+}
+/* 左侧目录隐藏 */
+.right{
+    margin-left:0px !important;
+    margin-top:80px;
+    /* background-color: #055766; */
+    height: 100vh;
+    display: flex;
+    flex-wrap:wrap;
+    
+    /* align-items: flex-start; */
+    /* align-content: flex-start; */
+    
+}
+.right article{
+    margin-left: 0.3em  !important;
+    margin-right: 0.3em !important;
+    margin-bottom: 3em;
+    /* flex:0 0 100px !important; */
+    
+    /* padding:2em; */
+    /* min-width: 300px; */
+    width:150px !important;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 1s;
+    }
+}
+
+/* @media screen and (min-width:600px) and (max-width:900px){
+    body {background-color:red;}
+  } */
