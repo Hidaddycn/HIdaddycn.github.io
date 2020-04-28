@@ -1,0 +1,32 @@
+/* 这个css文件是当模式选择为白天时候， 通过js动态创建一个link标签进行加载 */
+
+a:link{
+    color:#333;
+}
+a:visited{
+    
+    color:#222;
+}
+a:hover{
+    color:#055766;
+}
+a:active{
+    color:#055766;
+}
+/* 全局的链接颜色样式 */
+body{
+    background-color: #F9F9F9;;
+}
+header{
+    background-color: #fff;
+}
+/* 左侧导航条的背景颜色 */
+header>ul>li:hover{
+    background-color:#f9f9f9;
+    
+}
+/* 白天模式下第一级菜单hover上去的背景颜色 */
+#top{
+    background-color: #fff;
+}
+/* 最顶部fixed悬浮的导航条 */

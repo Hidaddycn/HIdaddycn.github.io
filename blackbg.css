@@ -1,0 +1,41 @@
+/* 这个css文件是当模式选择为黑夜时候， 通过js动态创建一个link标签进行加载 */
+a:link{
+    color:#fff;
+}
+a:visited{
+    
+    color:#fff;
+}
+a:hover{
+    color:#055766;
+}
+a:active{
+    color:#055766;
+}
+body{
+    background-color: #1c1f2b;
+}
+header{
+    background-color: #2d3143;
+}
+header>ul>li:hover{
+    background-color:transparent;
+    
+}
+/* 白天模式下第一级菜单hover上去的背景颜色 */
+#top{
+    background-color: #fff;
+}
+#top a{
+    color:#1c1f2b;
+}
+.right a{
+    color:#1c1f2b;
+}
+
+header i{
+    color:#fff;
+}
+header >p{
+    color:#fff;
+}

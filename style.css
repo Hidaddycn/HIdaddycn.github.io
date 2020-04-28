@@ -1,0 +1,512 @@
+
+    *{
+    padding:0;
+    margin:0;
+}
+ul ,li{
+    list-style: none;
+}
+a:link{
+    /* color:#075290;
+    color:#055766; */
+    text-decoration:none;
+    /* color:#fff; */
+    /* color:#333; */
+}
+a:visited{
+    /* color:#fff; */
+    /* color:#222; */
+}
+
+body{
+    
+    
+    font-family: mon;
+    color:#606060;
+    padding-top: 10px;
+    
+}
+/* body::before{
+    content: '';
+    display: table;
+} */
+#blackbody{
+    /* background-color: #1c1f2b; */
+    color:#c1c6d7;
+}
+@font-face{
+    font-family: mon;
+    src:url(./fonts/mon-normal.woff2)
+}
+/* 通用的样式 */
+#top{
+    line-height: 60px;
+    width:100%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgba(250,250,250,1);
+    /* background-color: rgba(0,124,145,1); */
+    position: fixed;
+    top:0;
+    z-index: 2;
+    /* background-color: #fff; */
+    padding-left:50px;
+    padding-right:50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+  
+    
+    /* border:1px solid green; */
+    
+    
+}
+
+
+#top >div{
+    
+    /* border:1px solid red; */
+    position: relative;
+    word-spacing:-6px;   /* 消除inline-blcok元素的空隙 */
+    
+}
+#top>div>i{
+    display:inline-block;
+    margin-left: 30px;
+    font-size:20px;
+    padding:5px;
+    vertical-align: middle;
+}
+#top>div>i:hover{
+    cursor:pointer;
+    /* color:#055766; */
+}
+
+#top >div>i:nth-child(1):hover::after{
+    content:'关闭声音';
+    text-align: center;
+    display: inline-block;
+    /* width: 100px; */
+    padding:1px 10px;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top:60px;
+    left:20px;
+    color:#fff;
+    font-size: 12px;
+    }
+
+    #top >div>i:nth-child(2):hover::after{
+    content:'更多教程';
+    text-align: center;
+    display: inline-block;
+    padding:1px 10px;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top:60px;
+    left:60px;
+    color:#fff;
+    font-size: 12px;
+    }
+
+    .icofont-settings:hover::after{
+    content:'日/夜模式';
+    text-align: center;
+    display: inline-block;
+    padding:1px 10px;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top:60px;
+    left:120px;
+    color:#fff;
+    font-size: 12px;
+    
+    }  
+    .icofont-navigation-menu:hover::after{
+        content:'全屏模式';
+        text-align: center;
+        display: inline-block;
+        padding:1px 10px;
+        line-height: 30px;
+        border-radius: 2px;
+        background-color: rgba(0,0,0,.6);
+        position: absolute;
+        top:60px;
+        left:180px;
+        color:#fff;
+        font-size: 12px;
+    }
+    #top >div>i:nth-child(3){
+        /* border:1px solid red; */
+        text-align: center;
+    }
+    #top >div>i:nth-child(3):active{
+        background-color: rgba(200,200,200,.4);
+        border-radius: 50% 50%;
+        /* transform: scale(1.2); */
+        
+    }
+    #top >div>i:nth-child(2):active{
+        background-color: rgba(200,200,200,.4);
+        border-radius: 50% 50%;
+        /* transform: scale(1.2); */
+        
+    }
+    #top >div>i:nth-child(1):active{
+        background-color: rgba(200,200,200,.4);
+        border-radius: 50% 50%;
+        /* transform: scale(1.2); */
+        
+    }
+    /* 以下是更多教程按钮下的菜单 */
+    #top .moretutorials{
+        position: absolute;
+        padding:15px;
+        left:30px;
+        border-radius: 0 0 5px 5px;
+        background-color:  rgba(255,255,255,1);
+        box-shadow: 1px 1px 1px rgba(200,200,200,.4);
+        color:#055766;
+        display: none;
+        
+    }
+    #top .moretutorials a{
+        display: block;
+    }
+    #top .moretutorials a i{
+        
+        font-size: 1.2em;
+        margin-right: 5px;
+        
+    }
+    #top .moretutorials a:hover{
+        color:#28b28b;
+    }
+    .nightsee{
+        width:80px;
+        height:130px;
+        border-radius: 0 0 5px 5px;
+        background-color:  rgba(255,255,255,1);
+        box-shadow: 1px 1px 1px rgba(200,200,200,.4);
+        position: absolute;
+        top:60px;
+        right:25px;
+        display: none;
+        text-align: center;
+    }
+    .nightsee i{
+        font-size: 2em;
+        display: block;
+        margin-top:20px;
+        
+        cursor: pointer;
+    }
+    .nightsee i:first-child{
+        color:#055766;
+    }
+    .nightsee i:last-child{
+        color:#055766;
+    }
+  
+
+#top >h1{
+    /* border:1px solid red; */
+}
+#top>h1>span{
+    color:#055766;
+    
+}
+
+/* 以上是顶部白色背景悬浮条样式 */
+header{
+    /* background-color: rgba(0,124,145,1); */
+    width:300px;
+    height: 100vh;
+    position: fixed;
+    top:60px;
+    overflow: auto;
+    padding:50px;
+    box-sizing: border-box;
+    
+    /* background-color: #fff; */
+    /* color:#fff; */
+    
+    
+}
+header::-webkit-scrollbar {display:none}
+#blackheader{
+    /* background-color: #2d3143; */
+}
+
+
+header > p{
+    
+   
+   
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /* border:1px solid red; */
+    
+    
+    
+}
+header >p >i{
+    margin-right: 10px;
+}
+header > p a{
+    text-decoration:underline!important;
+    /* color:#075290 !important; */
+    
+
+}
+header > p >a >i{
+    margin-left:10px;
+    
+    /* border:1px solid red; */
+    
+    
+    
+}
+
+header > ul{
+   /* border:1px solid white; */
+   margin-top: 30px;
+   padding-bottom: 2em;
+   border-bottom: 1px solid rgba(0,0,0,0.1);
+ 
+   
+}
+header>ul> li{
+   /* width:100%;
+   box-sizing: border-box; */
+   /* margin-bottom: 1.5em; */
+   padding:0.7em 1em;
+   border-left: 4px solid transparent;
+   /* border-bottom:1px solid rgba(0,0,0,.1); */
+   position: relative;
+   }
+   header>ul>li:hover{
+       /* background-color:#f9f9f9; */
+       border-left:4px solid #055766;
+       transition:all 0.5s;
+   }
+   header >ul >li:hover a{
+       /* color:#055766; */
+   }
+
+#active{
+
+
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    border-left: 4px solid #65b0bd;
+    padding:0.7em 1em;
+    background-color:#f9f9f9;
+
+}
+header li i:nth-child(2){
+    display: inline-block;
+    position: absolute;
+    right:5px;
+    cursor: pointer;
+    /* color:rgba(0,0,0,0.2); */
+    font-size:0.7em;
+}
+header > ul >li ul{   
+    /* display: none; */
+    /* padding-left: 10px; */
+    /* height:0px;
+    overflow: hidden;
+    transition: all 2s; */
+    /* 隐藏子菜单 */
+    display:none;
+}
+/* header >ul >li ul:hover{
+    height:0;
+    transition: all 2s;
+} */
+header > ul >li ul>li{
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    /* border-left: 4px solid transparent; */
+    padding:0.7em 1em;
+    font-size: 0.9em;
+}
+header > ul >li ul>li a:hover{
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    /* border-left: 4px solid #65b0bd; */
+    /* padding-left:10px; */
+    /* background-color:rgba(100,100,100,.1); */
+    transition: all 0.2s;
+    /* color:#65b0bd; */
+    font-weight: bold;
+
+}
+#footer{
+    position: absolute;
+    bottom: 30px;
+}
+.rotate{
+    transform: rotateZ(45deg);
+}
+#main{
+    margin-left:320px;
+    
+    height: 2200px;
+}
+/* #more::before{
+    content: '';
+    display: block;
+    width:20px;
+    height: 20px;
+    border-radius: 1px;
+    transform: rotateZ(45deg);
+    background-color:white;
+    position: absolute;
+    top:170px;
+    left:200px;
+
+
+
+}
+#more{
+    width:500px;
+    height: 180px;
+    border-radius: 3px;
+    background-color: white;
+    position: fixed;
+    z-index:111;
+    box-shadow: 2px 2px 10px gray;
+} */
+
+@keyframes show{
+    0%{height:200px};
+    100%{height: 300px;};
+}
+
+@keyframes xx {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+
+30% {
+-webkit-transform: scale3d(1.25, 0.75, 1);
+transform: scale3d(1.25, 0.75, 1);
+}
+
+40% {
+-webkit-transform: scale3d(0.75, 1.25, 1);
+transform: scale3d(0.75, 1.25, 1);
+}
+
+50% {
+-webkit-transform: scale3d(1.15, 0.85, 1);
+transform: scale3d(1.15, 0.85, 1);
+}
+
+65% {
+-webkit-transform: scale3d(0.95, 1.05, 1);
+transform: scale3d(0.95, 1.05, 1);
+}
+
+75% {
+-webkit-transform: scale3d(1.05, 0.95, 1);
+transform: scale3d(1.05, 0.95, 1);
+}
+
+100% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+} 
+
+#top>h1{
+animation: xx 1s 0.3s;
+}
+
+/* 以下是右侧主内容区域的样式 */
+.right{
+margin-left:310px;
+margin-top:80px;
+padding:20px;
+/* background-color: #055766; */
+/* height: 100vh; */
+display: flex;
+justify-content: left;
+
+flex-wrap:wrap;
+/* display: grid;
+    grid-template-columns: repeat(auto-fill, 310px);
+    justify-content: center; */
+
+}
+
+
+.right article{
+    /* flex-grow: 1; */
+    width:300px;
+
+margin-right: 1em;
+margin-bottom: 3em;
+
+
+border-radius: 5px;
+background-color: #fff;
+overflow: hidden;
+transition: all 1s;
+}
+.right article:nth-last-child(){
+    align-self: flex-start;
+}
+
+.right article:hover{
+box-shadow: rgba(146, 157, 154, 0.3) 0px 5px 8px 0px;
+transition: all 1s;
+cursor: pointer;
+}
+.right article div:nth-child(1){
+width:inherit;
+/* height: 200px; */
+margin-bottom: 0.6em;
+overflow: hidden;
+}
+.right article img{
+width:100%;
+
+
+transition: all 1s;
+}
+.right article img:hover{
+transform:scale(1.2);
+transition: all 2s;
+}
+.right article h2{
+font-size: 1em;
+/* font-weight: normal; */
+margin-bottom: 0.5em;
+
+}
+.right article h2:hover{
+color:rgb(40, 178, 139);
+transition: all 0.4s;
+}
+.right article div:last-child{
+padding: 0 1em 1em 1em;
+}
+.right article div:last-child >div{
+font-size: 0.8em;
+color:#858F96;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+.right article div:last-child >div i{
+margin-right: 0.3em;
+}
