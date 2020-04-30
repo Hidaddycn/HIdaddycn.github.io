@@ -198,7 +198,7 @@ function ajaxtest(){
           console.log(result.nodeName);
           console.log(result.nodeType);
            var ttt = result.querySelector('.allarticles');
-           console.log(ttt);
+           console.log(typeof ttt);
            console.log(ttt.nodeName);
            console.log(ttt.nodeType);
           // console.log(ttt.nodeName);
