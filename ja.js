@@ -184,7 +184,7 @@ function ajaxtest(){
     rightNode.setAttribute('style','display:none');
     var link = document.createElement('link');
                 link.rel="stylesheet";
-                link.href = 'style.css';
+                link.href = './style1.css';
                 var head = document.getElementsByTagName('head')[0];
                 head.appendChild(link);
     var xhr = new XMLHttpRequest();
