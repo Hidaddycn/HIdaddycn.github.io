@@ -199,11 +199,11 @@ function ajaxtest(){
           console.log(result.nodeType);
            
            var ttt = result.getElementsByClassName('allarticels')[0];
-           console.log(typeof ttt);
-           console.log(ttt.nodeName);
-           console.log(ttt.nodeType);
+          //  console.log(typeof ttt);
+          //  console.log(ttt.nodeName);
+          //  console.log(ttt.nodeType);
           // console.log(ttt.nodeName);
-          // document.body.appendChild(ttt);
+           document.body.appendChild(ttt);
           // console.log(ttt.nodeName);
           
       }
