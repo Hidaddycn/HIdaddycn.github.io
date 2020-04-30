@@ -181,11 +181,10 @@ function ajaxtest(){
   var aaa = document.getElementById('aaa');
   aaa.addEventListener('click',ajax,false);
   function ajax(){
+    rightNode.setAttribute('style','display:none');
     var xhr = new XMLHttpRequest();
     xhr.open('GET','tt.html',true);
     xhr.responseType ='document';
-    
-    rightNode.setAttribute('style','display:none');
     xhr.onreadystatechange =function(){
       if(xhr.readyState ==4){
         if(xhr.status ==200){
@@ -199,6 +198,10 @@ function ajaxtest(){
       
     }
     xhr.send();
+    
+    
+   
+    
   }
 }
 ajaxtest();
