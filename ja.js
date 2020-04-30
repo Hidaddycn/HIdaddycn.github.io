@@ -184,6 +184,7 @@ function ajaxtest(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET','tt.html',true);
     xhr.responseType ='document';
+    
     rightNode.setAttribute('style','display:none');
     xhr.onreadystatechange =function(){
       if(xhr.readyState ==4){
@@ -197,6 +198,7 @@ function ajaxtest(){
       }
       
     }
-  }xhr.send();
+    xhr.send();
+  }
 }
 ajaxtest();
