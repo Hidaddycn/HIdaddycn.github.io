@@ -175,3 +175,22 @@ function daynight(){
 });
 }
 daynight();
+
+
+function ajaxtest(){
+  var aaa = document.getElementById('aaa');
+  addEvent.addEventListener('click',ajax,false);
+  function ajax(){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET','tt.html',true);
+    xhr.responseType ='document';
+    xhr.onreadystatechange =function(){
+      if(xhr.readyState ==4){
+        if(xhr.status ==200){
+          var result = xhr.responseXML;
+          rightNode.style ='display:none';
+        }
+      }
+    }
+  }
+}
