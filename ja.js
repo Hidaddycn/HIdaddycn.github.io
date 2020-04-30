@@ -179,7 +179,7 @@ daynight();
 
 function ajaxtest(){
   var aaa = document.getElementById('aaa');
-  //aaa.addEventListener('click',ajax,false);
+  aaa.addEventListener('click',ajax,false);
   function ajax(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET','tt.html',true);
