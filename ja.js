@@ -188,7 +188,7 @@ function ajaxtest(){
                 var head = document.getElementsByTagName('head')[0];
                 head.appendChild(link);
     var xhr = new XMLHttpRequest();
-    xhr.open('GET','tt.html',true);
+    xhr.open('GET','basics.html',true);
     xhr.responseType ='document';
     xhr.onreadystatechange =function(){
       if(xhr.readyState ==4){
