@@ -179,9 +179,14 @@ daynight();
 
 function ajaxtest(){
   var aaa = document.getElementById('aaa');
-  aaa.addEventListener('click',ajax,false);
-  function ajax(){
+  aaa.addEventListener('click',handler,false);
+  function handler(){
     rightNode.setAttribute('style','display:none');
+    var link = document.createElement('link');
+                link.rel="stylesheet";
+                link.href = 'style.css';
+                var head = document.getElementsByTagName('head')[0];
+                head.appendChild(link);
     var xhr = new XMLHttpRequest();
     xhr.open('GET','tt.html',true);
     xhr.responseType ='document';
@@ -193,21 +198,14 @@ function ajaxtest(){
           var ttt = result.getElementById('ttt');
           document.body.appendChild(ttt);
           //console.log(ttt.nodeName);
-          var link =document.createElement('link');
-          link.rel="stylesheet";
-          link.href ='style1.css';
-          var head = document.getElementsByTagName('head')[0];
-          head.appendChild(link);
+          
       }
         }
       }
       
-    }
+    
     xhr.send();
-    
-    
-   
-    
   }
-}
+  }
+
 ajaxtest();
