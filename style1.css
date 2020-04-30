@@ -1,0 +1,715 @@
+ @font-face {
+            font-family: mo;
+            src: url(./fonts/mon-normal.woff2);
+        }
+
+        @font-face {
+            font-family: mo2;
+            src: url(./fonts/mon-middle.woff2);
+        }
+
+        @font-face {
+            font-family: mo3;
+            src: url(./fonts/mon-bold.woff2);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            font-family: mo;
+        }
+
+        p {
+            font-family: mo;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font: 14px mo;
+        }
+
+        button {
+            border: 0px solid transparent;
+        }
+
+        i {
+
+            font-size: 14px;
+            margin-right: 0.5em;
+        }
+
+        header {
+            background: rgba(66, 76, 76, 1);
+            padding: 1.5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container>a {
+            margin-right: 2em;
+        }
+
+        .container>a:hover {
+            color: rgba(26, 129, 253, 0.8);
+        }
+
+        .container>span {
+            color: #fff;
+            font: 14px mo;
+        }
+
+        .container>span:hover {
+            color: rgba(26, 129, 253, 0.8);
+        }
+
+        .social {
+            float: right;
+            /* outline: 1px solid red; */
+
+
+
+        }
+
+        .social i {
+            color: rgba(37, 235, 255, 1);
+            font-size: 1rem;
+            background: transparent;
+            margin-right: 0.5rem;
+            padding: 0.5em;
+        }
+
+        .social i:hover {
+            color: #fff;
+            padding: 0.5em;
+            background: #1a81fd;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+
+        }
+
+        /* 以上是《header>css样式 */
+        #banner {
+            background: url("./img/background.png") 50% 55%/100% no-repeat #110c20;
+            /* background-position:  left 0 top -30px; */
+            border: 1px solid transparent;
+
+        }
+
+        nav {
+            background: rgba(66, 71, 76, 0.3);
+
+            padding: 2em 0;
+            /* outline: 1px solid red; */
+
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav>.container {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .brand {
+            width: 200px;
+            height: 30px;
+            background: url(./img/tenestarlogo.png) no-repeat;
+            background-size: contain;
+        }
+
+        nav ul {
+            display: flex;
+            /* outline: 1px dashed red; */
+
+
+
+        }
+
+        nav ul li {
+            margin-right: 1.5em;
+        }
+
+        nav a {
+            font-size: 12px;
+        }
+
+        nav a:hover {
+            color: #25ebff;
+        }
+
+        nav ul li:first-child a {
+            color: #25ebff;
+        }
+
+        .banner-text {
+            margin: 3em 0 13em 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .banner-text h3:first-child {
+            font-size: 30px;
+            letter-spacing: 9px;
+            font-family: mo;
+        }
+
+        .banner-text h3:nth-child(2) {
+            font-size: 100px;
+            text-transform: capitalize;
+            /* letter-spacing: 9px; */
+            font-weight: 500;
+            font-family: mo2;
+            /* margin-bottom: 0.4em; */
+        }
+
+        .banner-text h3:nth-child(3) {
+            font-size: 18px;
+            font-family: mo;
+            line-height: 2em;
+        }
+
+        .banner-text h3:nth-child(4)>a {
+            font: 10px mo2;
+            background-color: #1a81fd;
+            display: inline-block;
+            padding: 1.2em 3.5em;
+            border-radius: 30px;
+            margin-top: 4em;
+            letter-spacing: 1px
+        }
+
+        .banner-text h3:nth-child(4)>a:hover {
+            background: #25ebff;
+        }
+
+        /* 以上是banner部分csss */
+        .banenr-bo {
+            background: url(./img/img2.png) no-repeat;
+            background-size: cover;
+            padding: 10em 0;
+            color: #fff;
+            font: 14px / 1.8em mo;
+
+        }
+
+        .banenr-bo .container {
+            display: flex;
+        }
+
+        .banenr-bo .container section {
+
+            flex-basis: 33%;
+            margin-right: 2em;
+        }
+
+        .banenr-bo .container section:nth-child(1) {
+            position: relative;
+            top: -4rem;
+        }
+
+        .banenr-bo .container section:nth-child(1) h3 {
+            font-size: 12px;
+            /* word-spacing: 0.5em; */
+            letter-spacing: 2.4px;
+            ;
+        }
+
+        .banenr-bo .container section:nth-child(1) p {
+            font-size: 32px;
+            line-height: 1.2em;
+            margin-top: 2rem;
+            ;
+        }
+
+        .banenr-bo .container section:nth-child(1) p span {
+            color: #25ebff;
+        }
+
+        /* 以上为banner下面蓝色背景内容 */
+        .banner-bo-bo {
+            background: url(./img/img3.png) 0 -1px no-repeat;
+
+        }
+
+        .banner-bo-bo section:first-child {
+            position: relative;
+            top: -100px;
+        }
+
+        .banner-bo-bo section:first-child {
+            display: flex;
+            /* margin-bottom:12em; */
+        }
+
+        .banner-bo-bo section>div {
+            flex-basis: 33.3%;
+            padding: 2rem;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .banner-bo-bo section>div:nth-child(1) {
+            background: #3490ff;
+        }
+
+        .banner-bo-bo section>div:nth-child(2) {
+            background: #1a81fd;
+        }
+
+        .banner-bo-bo section>div:nth-child(3) {
+            background: #117af8;
+        }
+
+        .banner-bo-bo section>div h3 {
+            margin-bottom: 1em;
+            font-size: 20px;
+        }
+
+        .banner-bo-bo section>div i {
+            font-size: 60px;
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+        .banner-bo-bo section>div:nth-child(1):hover {
+            background: #117af8;
+        }
+
+        .banner-bo-bo section>div:nth-child(2):hover {
+            background: #0f6dde;
+        }
+
+        .banner-bo-bo section>div:nth-child(3):hover {
+            background: #0061d5;
+        }
+
+        .banner-bo-bo section+section {
+            /* outline: 1px dashed red; */
+            padding-left: 50%;
+            padding-bottom: 10rem;
+        }
+
+        .banner-bo-bo section+section h3 {
+            color: #1a81fd;
+            font-size: 12px;
+            letter-spacing: 2.4px;
+            margin-bottom: 3rem;
+        }
+
+        .banner-bo-bo section+section h4 {
+            font-size: 32px;
+            color: #2b3238;
+            margin-bottom: 3rem;
+        }
+
+        .banner-bo-bo section+section h4 span {
+            color: #25ebff;
+        }
+
+        .banner-bo-bo section+section p {
+            color: #42474c;
+            font-size: 14px;
+            line-height: 1.8em;
+        }
+
+        .banner-bo-bo section+section p span {
+
+            font-weight: bold;
+            font-family: mo2;
+        }
+
+        button {
+            border: none;
+        }
+
+        .banner-bo-bo section+section button a {
+            color: #fff;
+            font: 14px mo2;
+            background: #1a81fd;
+            padding: 20px 41px 18px 41px;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 3rem;
+        }
+
+        .banner-bo-bo section+section button a:hover {
+            background: #25ebff;
+        }
+
+        /* 以上是 who we are  */
+        .little-title {
+            color: #1a81fd;
+            font-size: 12px;
+            letter-spacing: 2.4px;
+            margin-bottom: 3rem;
+        }
+
+        .middle-title {
+            font-size: 32px;
+            color: #2b3238;
+            margin-bottom: 3rem;
+
+        }
+
+        .litte2-title {
+            font-size: 18px;
+            letter-spacing: 3.6px;
+            margin-bottom: 1rem;
+
+        }
+
+        /* 以上两段为共有标题样式 */
+
+        #our-benefits {
+            text-align: center;
+        }
+
+        .six-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .six-grid>div {
+            flex-basis: 33%;
+            margin-bottom: 4rem;
+        }
+
+        .six-grid i {
+            display: inline-block;
+            color: #1a81fd;
+            font-size: 68px;
+            margin-bottom: 2rem;
+        }
+
+        .six-grid i:hover {
+            color: #25ebff;
+        }
+
+        .textp {
+            color: #42474c;
+            font-size: 14px;
+            line-height: 1.8em;
+        }
+
+        /* <!-- 以上是OUR BENEFITS6个图标加文字 --> */
+        #pic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 6rem;
+        }
+
+        .box {
+            flex-basis: 22%;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .box-text {
+            text-align: center;
+            /* display: none; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .box:hover .box-text {
+            /* display: block; */
+            opacity: 1;
+        }
+
+        .box:before,
+        .box:after {
+            content: '';
+            background: linear-gradient(#000dff 0%, #6b73ff 100%);
+            height: 150%;
+            width: 50%;
+            border-radius: 0 100% 0 0;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 50px;
+            z-index: 1;
+            transition: border-radius .5s ease-out, top .5s ease-out, opacity .3s ease-out;
+        }
+
+        .box:after {
+            border-radius: 100% 0 0 0;
+            left: 50%;
+        }
+
+        .box:hover:before,
+        .box:hover:after {
+            top: -50%;
+            opacity: 0.9;
+            border-radius: 0 35% 0 0;
+        }
+
+        .box:hover:after {
+            border-radius: 35% 0 0 0;
+        }
+
+        .box a i {
+            display: inline-block;
+            color: #fff;
+            background: transparent;
+            font-size: 24px;
+            line-height: 55px;
+            height: 55px;
+            width: 55px;
+            /* border: 1px solid #fff; */
+            /* border-bottom: none;
+            border-right: none; */
+            border-radius: 50%;
+            margin-top: 1rem;
+
+            transition: all 0.3s ease;
+        }
+
+        .box a:hover i {
+            /* border: 1px solid rgba(255, 255, 255, 0.3); */
+            box-shadow: 0 0 10px #000;
+        }
+
+        /* 以上为八张展示图片 */
+        .bestsell {
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .pric {
+            display: flex;
+        }
+
+        .pric>div {
+            flex-basis: 31%;
+            margin-right: 3rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 0.2rem;
+        }
+
+        .pric>div i {
+            display: inline-block;
+            font-size: 48px;
+            color: #1a81fd;
+            margin: 2rem 0;
+
+        }
+
+        .pric>div h4 {
+            font-size: 18px;
+            letter-spacing: 3px;
+            margin: 1rem 0;
+        }
+
+        .pric>div strong {
+            font: 48px mo2;
+            font-weight: bold;
+        }
+
+        .pric>div span {
+            vertical-align: top;
+        }
+
+        .pric>div p {
+            margin: 1rem 0;
+            font-size: 14px;
+            line-height: 2em;
+            ;
+        }
+
+        .pric>div button a {
+            color: #333;
+            font: 14px mo;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            /* background: #1a81fd; */
+            padding: 15px 41px 15px 41px;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0 3rem 0;
+        }
+
+        .pric>div button a:hover {
+            background: #1a81fd;
+            color: #fff;
+
+        }
+
+        .pric>div:nth-child(2) {
+            background: url(./img/best.png) right top no-repeat #5928dc;
+        }
+
+        .pric>div:nth-child(2) button {
+            background-color: inherit;
+        }
+
+        .pric>div:nth-child(2) h4,
+        .pric>div:nth-child(2) h5,
+        .pric>div:nth-child(2) p,
+        .pric>div:nth-child(2) a,
+        .pric>div:nth-child(2) i {
+            color: #fff;
+        }
+
+        .pric>div:nth-child(2) a {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* 以上是价格 */
+        .inquery {
+            margin-top: 5rem;
+            background: #2b3238;
+            padding: 3rem 0;
+
+        }
+
+        .inquery .middle-title {
+            color: #fff;
+        }
+
+        .inquery p {
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        .inquery li {
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        .inquery i {
+            color: #25ebff;
+            font-size: 30px;
+        }
+
+        .inquery .container {
+            display: flex;
+        }
+
+        .inquery section {
+            flex-basis: 50%;
+        }
+
+        input,
+        textarea {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            width: 600px;
+            height: 50px;
+            outline: none;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        input:active {
+            border: none;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .inquery button {
+            color: #fff;
+            font: 14px mo2;
+            background: #1a81fd;
+            padding: 20px 41px 18px 41px;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 3rem;
+        }
+
+        /* 以下是页脚部分 */
+        footer {
+            margin-top: 6rem;
+            font-family: mo;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: inherit;
+        }
+
+        footer .container {
+            display: flex;
+        }
+
+        footer .container>div {
+            flex-basis: 25%;
+        }
+        footer .container>div h5{
+            margin-bottom: 2rem;;
+        }
+        footer .container>div li{
+            margin-bottom: 1rem;
+        }
+
+        .footer_brand {
+            width: 80%;
+            height: 50px;
+            background: url(./img/tenestarlogo.png) no-repeat rgba(200, 200, 200, .1);
+            background-size: contain;
+            margin-bottom: 2rem;
+        }
+
+        .footer_brand+p {
+            line-height: 1.6em;
+            ;
+        }
+        #copyright{
+            flex-basis: 100%;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+           
+        }
+        #zhezhao{
+            background: 50% 50% / 100px 100px url(file:///Users/zhuenxi/Downloads/25.gif) no-repeat #000;
+            height: 100vh;
+            width:100%;
+            position: fixed;
+            z-index: 999;
+            color:#fff;
+            font-size: 100px;
+            text-align: center;
+            line-height: 100vh;
+        }
+        #zuihou{
+            background: red;
+            height: 100px;
+            width:100%;
+            position: fixed;
+        }
