@@ -197,10 +197,10 @@ function ajaxtest(){
           console.log(result);
           console.log(result.nodeName);
           console.log(result.nodeType);
-          var ttt = result.querySelector('.allarticles');
-          console.log(ttt.nodeName);
-          document.body.appendChild(ttt);
-          console.log(ttt.nodeName);
+          // var ttt = result.querySelector('.allarticles');
+          // console.log(ttt.nodeName);
+          // document.body.appendChild(ttt);
+          // console.log(ttt.nodeName);
           
       }
         }
