@@ -179,18 +179,22 @@ daynight();
 
 function ajaxtest(){
   var aaa = document.getElementById('aaa');
-  addEvent.addEventListener('click',ajax,false);
+  //aaa.addEventListener('click',ajax,false);
   function ajax(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET','tt.html',true);
     xhr.responseType ='document';
+    rightNode.setAttribute('style','display:none');
     xhr.onreadystatechange =function(){
       if(xhr.readyState ==4){
         if(xhr.status ==200){
           var result = xhr.responseXML;
-          rightNode.style ='display:none';
+          rightNode.setAttribute('style','display:none');
+          var ttt = result.getElementById('ttt');
+          document.body.appendChild(ttt);
         }
       }
+      xhr.send();
     }
   }
 }
