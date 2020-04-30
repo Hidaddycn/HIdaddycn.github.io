@@ -12,7 +12,11 @@
             font-family: mo3;
             src: url(./fonts/mon-bold.woff2);
         }
-
+        #ttt{
+            margin-left:310px;
+        margin-top:80px;
+        padding:20px;
+        }
         * {
             padding: 0;
             margin: 0;
