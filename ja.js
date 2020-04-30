@@ -192,6 +192,7 @@ function ajaxtest(){
           rightNode.setAttribute('style','display:none');
           var ttt = result.getElementById('ttt');
           document.body.appendChild(ttt);
+          console.log(ttt.nodeName);
         }
       }
       xhr.send();
