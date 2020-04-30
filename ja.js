@@ -195,8 +195,8 @@ function ajaxtest(){
           console.log(ttt.nodeName);
         }
       }
-      xhr.send();
+      
     }
-  }
+  }xhr.send();
 }
 ajaxtest();
