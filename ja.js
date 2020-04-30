@@ -192,7 +192,13 @@ function ajaxtest(){
           rightNode.setAttribute('style','display:none');
           var ttt = result.getElementById('ttt');
           document.body.appendChild(ttt);
-          console.log(ttt.nodeName);
+          //console.log(ttt.nodeName);
+          var link =document.createElement('link');
+          link.rel="stylesheet";
+          link.href ='style1.css';
+          var head = document.getElementsByTagName('head')[0];
+          head.appendChild(link);
+      }
         }
       }
       
