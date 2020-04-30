@@ -4,11 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./icon/icofont/icofont.min.css">
     <style>
+        .allarticels{
+            margin-left:310px;
+            margin-top:80px;
+            padding:20px;
+            background-color: #f9f9f9;
+            color:#666;
+            
+        }
+        .allarticels a:link,a:visited{
+            text-decoration: none;
+        }
 
+        /* 每片文章的通用最外层的class类，用于左边距，上边距等 */
+        .articleheader{
+            border-radius: 5px;
+            background-color: rgb(40, 178, 139);
+            padding: 25px 20px;
+            display: flex;
+            flex-flow:nowrap row;
+            justify-content: space-between;
+
+        } 
+        .articleheader a:link,a:visited{
+            
+            color:#fff;
+            text-decoration: none;
+        }
+        /* 每片文章的最头部绿色背景信息，用于上一篇，和下一片文章的切换链接 */
+        .articletitle h2{
+            font-size: 1.5em;
+            margin-top:2rem;
+            margin-bottom:2rem;
+            text-indent: 1em;
+        }
+        /* 每片文章的最大标题 */
+        .articlecatalog{
+            margin-top:2rem;
+            margin-bottom:2rem;
+
+        }
+        .articlecatalog ul{
+            list-style: none;
+            border-left:2px solid rgb(40, 178, 139);
+            padding-inline-start:2rem;
+        }
+        .articlecatalog ul li{
+            list-style: none;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            
+        }
+        .articlecatalog a:link, .articlecatalog a:visited{
+            color:#666;
+            font-size: 0.9em;
+        }
+        .articlecatalog a:hover,.articlecatalog a:active{
+            color:rgb(40, 178, 139);
+        }
+        /* 每片文章的导航内容 */
+        .articlestitle{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-indent: 1rem;
+        }
+        .articlecontent{
+            font-size: 0.9em;
+        }
+        .articlecontent pre{
+            background-color: rgba(30, 30, 30, 0.1);
+            border-radius: 5px;
+            /* display: block; */
+            
+        }
     </style>
 </head>
 <body>
-    <div class="article-header"></div>
+    <div class="allarticels">
+        <div class="articleheader">
+            <div><a href=""><i class="icofont-thin-double-left"></i>css简介</a></div>
+            <div><a href="">组合选择器<i class="icofont-thin-double-right"></i></a></div>
+            
+        </div>
+        <div class="articletitle">
+            <h2>css基本选择器</h2>
+        </div>
+        <div class="articlecatalog">
+            <ul>
+                <li><a href="">简单选择器</a></li>
+                <li><a href="">属性选择器</a></li>
+                <li><a href="">伪类选择器</a></li>
+                <li><a href="">伪元素选择器</a></li>
+            </ul>
+        </div>
+        <div class="articlestitle">
+            <h3>简单选择器</h3>
+        </div>
+        <div class="articlecontent">
+            <p>
+          * 通配符选择器:<br>
+          通配符选择器将无差别的选择所有的标签元素
+        </p>
+        <pre>
+            <code>
+*{color:red}
+            
+            </code>
+        </pre>
+        
+        </div>
+    </div>
 </body>
 </html>
