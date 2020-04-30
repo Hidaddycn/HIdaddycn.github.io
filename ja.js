@@ -194,7 +194,9 @@ function ajaxtest(){
       if(xhr.readyState ==4){
         if(xhr.status ==200){
           var result = xhr.responseXML;
-          rightNode.setAttribute('style','display:none');
+          console.log(result);
+          console.log(result.nodeName);
+          console.log(result.nodeType);
           var ttt = result.querySelector('.allarticles');
           console.log(ttt.nodeName);
           document.body.appendChild(ttt);
