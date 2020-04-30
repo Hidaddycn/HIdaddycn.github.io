@@ -195,9 +195,10 @@ function ajaxtest(){
         if(xhr.status ==200){
           var result = xhr.responseXML;
           rightNode.setAttribute('style','display:none');
-          var ttt = result.getElementsByClassName('allarticles')[0];
+          var ttt = result.querySelector('allarticles');
+          console.log(ttt.nodeName);
           document.body.appendChild(ttt);
-          //console.log(ttt.nodeName);
+          console.log(ttt.nodeName);
           
       }
         }
