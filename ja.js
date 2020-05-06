@@ -197,7 +197,7 @@ function ajaxtest(){
           rightNode.setAttribute('style','display:none');
           var ttt = result.querySelector('.allarticles');
           console.log(ttt.nodeName);
-          document.body.appendChild(ttt);
+          rightNode.appendChild(ttt);
           console.log(ttt.nodeName);
           
       }
