@@ -438,16 +438,21 @@ margin-top:80px;
 padding:20px;
 /* background-color: #055766; */
 /* height: 100vh; */
-display: flex;
+/* display: flex;
 justify-content: left;
 
-flex-wrap:wrap;
+flex-wrap:wrap; */
 /* display: grid;
     grid-template-columns: repeat(auto-fill, 310px);
     justify-content: center; */
 
 }
+.inner{
+    display: flex;
+justify-content: left;
 
+flex-wrap:wrap;
+}
 
 .right article{
     /* flex-grow: 1; */

@@ -6,7 +6,7 @@
     color:#666;
     
 }
-.allarticels a:link,a:visited{
+.allarticels a:link, .allarticels a:visited{
     text-decoration: none;
 }
 
@@ -20,7 +20,7 @@
     justify-content: space-between;
 
 } 
-.articleheader a:link,a:visited{
+.articleheader a:link,.allarticels a:visited{
     
     color:#fff;
     text-decoration: none;
