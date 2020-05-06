@@ -3,6 +3,7 @@ var articleNodes = document.getElementsByTagName('article');
 var headerNode = document.getElementsByTagName('header')[0];
 var rightNode = document.getElementsByClassName('right')[0];
 var moretutorials = document.getElementsByClassName('moretutorials')[0];
+var inner = document.getElementsByClassName('inner')[0];
 //以下函数是绑定监听函数的兼容写法，可供全局使用
 function addEvent(element,type,handler,useCapture){
   if(element.addEventListener){
@@ -181,7 +182,7 @@ function ajaxtest(){
   var aaa = document.getElementById('aaa');
   aaa.addEventListener('click',handler,false);
   function handler(){
-    rightNode.setAttribute('style','display:none');
+    inner.setAttribute('style','display:none');
     var link = document.createElement('link');
                 link.rel="stylesheet";
                 link.href = './style1.css';
